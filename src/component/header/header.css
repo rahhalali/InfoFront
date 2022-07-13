@@ -1,0 +1,81 @@
+.header {
+    /*display: grid;*/
+    /*grid-template-columns: 25% 75%;*/
+    /*grid-template-areas: "logo top" "logo nav";*/
+    display:flex;
+    justify-content: center;
+}
+.header .top-header {
+    grid-area: top;
+    min-height: 48px;
+    background: #111111 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #eeeeee;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header .top-header .info-header {
+    flex-wrap: wrap;
+}
+.header .top-header .info-header .info-header1 {
+    justify-content: center;
+    margin-right: 4.375rem;
+    margin-left: 1.25rem;
+}
+.header .top-header .info-header .info-header1 div {
+    margin-right: 0.813rem;
+    cursor: pointer;
+}
+.header .top-header .info-header .info-header2 div {
+    margin-right: 0.813rem;
+    cursor: pointer;
+}
+.header .top-header .social-icon div {
+    border-left: #2a2a2a 0.063rem solid;
+    height: 100%;
+    padding: 0.625rem;
+    cursor: pointer;
+}
+.header .top-header .social-icon div:hover {
+    background-color: #5e5e5e;
+    transition: 0.7s;
+}
+.header .top-header .social-icon .instagram-icon {
+    border-right: #2a2a2a 0.063rem solid;
+}
+.header .nav-header {
+    grid-area: nav;
+}
+.header .nav-header .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .nav-header .navbar .navbar-links .home {
+    color: #e41c26;
+}
+.header .nav-header .navbar .navbar-links ul {
+    display: flex;
+}
+.header .nav-header .navbar .navbar-links ul li {
+    list-style: none;
+}
+.header .nav-header .navbar .navbar-links ul li a {
+    text-decoration: none;
+    color: #111111;
+    padding: 1rem;
+    display: block;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) Futura;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal normal 1rem Futura;
+    letter-spacing: 0rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+.header .nav-header .navbar .navbar-links ul li:hover {
+    background-color: #5e5e5e;
+    transition: 1s;
+}
+.header .nav-header .navbar .navbar-links ul li:hover a {
+    color: white;
+}
